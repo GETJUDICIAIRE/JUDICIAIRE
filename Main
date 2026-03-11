@@ -1,1 +1,7 @@
+writefile("Iris",game:HttpGet('https://github.com/GETJUDICIAIRE/JUDICIAIRE/raw/refs/heads/main/Iris.rbxm'))
+	local RBXM = loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/GETJUDICIAIRE/JUDICIAIRE/refs/heads/main/rbxm'))()
+	local Iris = RBXM.require(RBXM.launch("Iris.rbxm"))
+    Iris.Init()
+    
+
 
