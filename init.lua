@@ -1,5 +1,5 @@
 --!optimize 2
-local Types = require(script.Types)
+local Types = loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/GETJUDICIAIRE/JUDICIAIRE/refs/heads/main/Types.lua')()
 
 --[=[
     @class Iris
@@ -22,7 +22,7 @@ local Types = require(script.Types)
 ]=]
 local Iris = {} :: Types.Iris
 
-local Internal: Types.Internal = require(script.Internal)(Iris)
+local Internal: Types.Internal = loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/GETJUDICIAIRE/JUDICIAIRE/refs/heads/main/Internal.lua')()(Iris)
 
 --[=[
     @within Iris
@@ -332,7 +332,7 @@ end
 
     TemplateConfig provides a table of default styles and configurations which you may apply to your UI.
 ]=]
-Iris.TemplateConfig = require(script.config)
+Iris.TemplateConfig = loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/GETJUDICIAIRE/JUDICIAIRE/refs/heads/main/config.lua')()(Iris)
 Iris.UpdateGlobalConfig(Iris.TemplateConfig.colorDark) -- use colorDark and sizeDefault themes by default
 Iris.UpdateGlobalConfig(Iris.TemplateConfig.sizeDefault)
 Iris.UpdateGlobalConfig(Iris.TemplateConfig.utilityDefault)
@@ -684,9 +684,10 @@ end
     Iris:Connect(Iris.ShowDemoWindow)
     ```
 ]=]
-Iris.ShowDemoWindow = require(script.demoWindow)(Iris)
+Iris.ShowDemoWindow = loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/GETJUDICIAIRE/JUDICIAIRE/refs/heads/main/demoWindow.lua')()(Iris)
 
 require(script.widgets)(Internal)
 require(script.API)(Iris)
 
 return Iris
+
