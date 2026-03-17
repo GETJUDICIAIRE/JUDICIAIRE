@@ -65,7 +65,7 @@ local Theme = {
 	Blue = Color3.fromRGB(255, 255, 255),
 	Enabled = Color3.fromRGB(255, 255, 255),
 	Disabled = Color3.fromRGB(0, 0, 0),
-	Hover = Color3.fromRGB(35, 35, 35),
+	Hover = Color3.fromRGB(4, 4, 4),
 	DotPattern = Color3.fromRGB(0, 0, 0),
 	DotHover = Color3.fromRGB(255,255,255)
 }
