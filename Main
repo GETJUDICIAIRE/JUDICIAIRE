@@ -466,7 +466,7 @@ function Library:Window(Args)
     if Title and Title~="" then
         TitleLabel=Library:Create("TextLabel",{Name="Title",Parent=LeftBlock,BackgroundTransparency=1,BorderSizePixel=0,
             Size=UDim2.new(1,0,0,14),Font=T.FontBold,RichText=true,Text=Title,
-            TextColor3=T.Accent,TextSize=13,TextXAlignment=Enum.TextXAlignment.Left,TextWrapped=true})
+            TextColor3="#FFFFFF",TextSize=13,TextXAlignment=Enum.TextXAlignment.Left,TextWrapped=true})
         rA(TitleLabel,"TextColor3"); MkGrad(TitleLabel)
     end
     local SubTitleLabel
